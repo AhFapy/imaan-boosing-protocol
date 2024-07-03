@@ -1,0 +1,61 @@
+
+  .little-img-div {
+    margin-right: 2%;
+  }
+  
+  .little-img {
+    width: 130px; 
+    height: 75px; 
+    object-fit: cover; 
+    image-rendering: -webkit-optimize-contrast; /* Mejora la calidad de renderizado en navegadores WebKit */
+    image-rendering: crisp-edges; /* Evita el suavizado de la imagen */  
+  }
+  
+.little-img:hover {
+    cursor: pointer;
+}
+.little-img-div {
+  cursor: pointer; /* Cambia el cursor para indicar que es clicable */
+}
+
+.little-img.selected {
+  border: 2px solid #1D2E35; /* Borde azul para la imagen seleccionada */
+}
+
+.little-img {
+  width: 5rem;  /* Fija el ancho de la imagen */
+  height: 5rem; /* Fija la altura de la imagen */
+  object-fit: cover; /* Asegura que la imagen se recorte correctamente si es necesario */
+  image-rendering: -webkit-optimize-contrast; /* Mejora la calidad de renderizado en navegadores WebKit */
+  image-rendering: crisp-edges; /* Evita el suavizado de la imagen */
+  border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+  .little-img {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .little-img {
+    width: 3rem; /* Adjust image size for smaller screens */
+    height: 3rem;
+  }
+}
+
+@media (max-width: 530px) {
+  .little-img {
+    width: 2.5rem; /* Adjust image size for smaller screens */
+    height: 2.5rem;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .little-img {
+    width: 2rem; /* Adjust image size for smaller screens */
+    height: 2rem;
+  }
+}
